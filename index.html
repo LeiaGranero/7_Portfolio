@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html & css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            font-family: var(--andanapro);
+            text-transform: uppercase;
+            color: var(--blanco);
+        }
+        :root{
+            --negro: #000000;
+            --verde: #8aaa8f;
+            --grisclaro: #303030;
+            --blanco: #FFFFFF;
+            --gris: #e5e5e5;
+            --opensans: 'Open Sans', sans-serif;
+            --andanapro: 'Andada Pro', serif;
+            --negrita: 600;
+        }
+        .container{
+            padding: 0 2em;
+        }
+        body>header{
+            display: flex;
+            padding: 60px 0;
+            text-align: center;
+            height: 100vh;
+            background-color: var(--verde);
+        }
+        header .container{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        hgroup{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        h1{
+            font-size: 1.5em;
+            margin: 6em 0 1em 0;
+            font-family: var(--opensans);
+            font-weight: var(--negrita);
+            color: var(--blanco);
+        }
+        h2{
+            font-size: 1em;
+            font-family: var(--andanapro);
+            color: white;
+            width: 50%;
+        }
+        h3{
+            margin: 2em 0 1em 1.7em;
+            font-family: var(--opensans);
+        }       
+        h4{
+            margin: 0 15em 2em 2em;
+            font-weight: var(--negrita);
+        }
+        h5{
+            font-family: var(--opensans);
+        }
+        p{
+            margin: 0 15em 2em 2em;
+            color: var(--verde);
+        }
+        nav{
+            display: flex;
+            padding: 1em 3em;
+            width: 100%;
+            justify-content: space-between;
+        }
+        nav a{
+            font-size: 0.75em;
+            color: var(--blanco);
+        }
+        section:first-child .container{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: var(--negro);
+            color: white;
+        }
+        section:last-child .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /*ABOUT ME*/
+        .card_aboutme{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            margin: 1em;
+            padding: 0.75em;
+            width: 300px;
+        }
+        .aboutme_img{
+            width: 300px;
+            height: 300px;
+            margin: 0 -9em 2em 1em;
+        }
+        .aboutme_img img{
+            border-radius: 300px;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+        /*PROJECTS*/
+        .card_projects{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 1em;
+            padding: 0.75em;
+            align-items: center;
+            width: 300px;
+            box-shadow: var(--negro) 0px 0px 15px;
+        }
+        .card_projects nav a{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            color: var(--verde);
+            font-family: var(--opensans);
+            font-weight: var(--negrita);
+            font-size: 3em;
+        }
+        .projects_img{
+            width: 250px;
+            height: 250px;
+
+        }
+        .card_projects header{
+            margin: 0.75em 0 0 0;
+            text-align: center;
+            font-size: 0.7em;
+        }
+        section:last-child{
+            display: flexbox;
+            padding: 6px 0;
+            height: 100%;
+            background-color: var(--gris);
+            color: var(--negro);
+        }
+        footer{
+            padding: 6px 0;
+            height: 50vh;
+            background-color: var(--verde);
+            color: white;
+        }
+        footer .container{
+            display: flex;
+        }
+        footer ul li{
+            font-family: var(--opensans);
+            font-size: 0.6em;
+            color: white;
+        }
+        
+
+
+        @media (max-width: 1700px){
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            font-family: var(--andanapro);
+            text-transform: uppercase;
+            color: var(--blanco);
+        }
+        :root{
+            --negro: #000000;
+            --verde: #8aaa8f;
+            --grisclaro: #303030;
+            --blanco: #FFFFFF;
+            --gris: #e5e5e5;
+            --opensans: 'Open Sans', sans-serif;
+            --andanapro: 'Andada Pro', serif;
+            --negrita: 600;
+        }
+        .container{
+            padding: 0 2em;
+        }
+        body>header{
+            display: flex;
+            padding: 60px 0;
+            text-align: center;
+            height: 100vh;
+            background-color: var(--verde);
+        }
+        header .container{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        hgroup{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        h1{
+            font-size: 1.5em;
+            margin: 6em 0 1em 0;
+            font-family: var(--opensans);
+            font-weight: var(--negrita);
+            color: var(--blanco);
+        }
+        h2{
+            font-size: 1em;
+            font-family: var(--andanapro);
+            color: white;
+            width: 50%;
+        }
+        h3{
+            margin: 2em 0 1em 1.7em;
+            font-family: var(--opensans);
+        }       
+        h4{
+            margin: 0 3em 2em 2em;
+            font-weight: var(--negrita);
+
+        }
+        h5{
+            font-family: var(--opensans);
+        }
+        p{
+            margin: 0 3em 2em 2em;
+            color: var(--verde);
+        }
+        nav{
+            display: flex;
+            padding: 1em 2em;
+            width: 100%;
+            justify-content: space-between;
+        }
+        nav a{
+            font-size: 0.5em;
+        }
+        section:first-child .container{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: var(--negro);
+            color: white;
+        }
+        section:last-child .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /*ABOUT ME*/
+        .card_aboutme{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            margin: 1em;
+            padding: 0.75em;
+            width: 300px;
+        }
+        .aboutme_img{
+            width: 300px;
+            height: 300px;
+            margin: 0 -9em 2em 1em;
+        }
+        .aboutme_img img{
+            border-radius: 300px;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+        /*PROJECTS*/
+        .card_projects{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 1em;
+            padding: 0.75em;
+            align-items: center;
+            width: 300px;
+            box-shadow: var(--negro) 0px 0px 15px;
+        }
+        .projects_img{
+            width: 250px;
+            height: 250px;
+        }
+        .card_projects header{
+            margin: 0.75em 0 0 0;
+            text-align: center;
+            font-size: 0.7em;
+        }
+        .card_projects nav a{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            color: var(--verde);
+            font-family: var(--opensans);
+            font-weight: var(--negrita);
+            font-size: 3em;
+        }
+        section:last-child{
+            display: flexbox;
+            padding: 6px 0;
+            height: 100%;
+            background-color: var(--gris);
+            color: var(--negro);
+        }
+        footer{
+            padding: 6px 0;
+            height: 50vh;
+            background-color: var(--verde);
+            color: white;
+        }
+        footer .container{
+            display: flex;
+        }
+        footer ul li{
+            font-family: var(--opensans);
+            font-size: 0.6em;
+            color: white;
+        }
+        }
+        @media (max-width: 600px){
+            h4{
+            margin: 0 3em 2em 2em;
+            font-weight: var(--negrita);
+            }
+            p{
+            margin: 0 3em 2em 2em;
+            color: var(--verde);
+            }
+            h1{
+                align-items: center;
+                justify-content: center;
+            }
+            a{
+                font-size: 3px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <hgroup>
+                <h1>HTML & CSS</h1>
+                <h2>Projects in the representation systems class</h2>
+            </hgroup>
+            <nav>
+                <a href="#perfumes">About me</a>
+                <a href="#Projects">Projects</a>
+                <a href="#ContactMe">Contact me</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <section id="#perfumes">
+                <h3>About me</h3>
+                <header>
+                    <h4>I am a graphic design student at the school of art and design studies in alcoy.</h4>
+                    <P>When I finish my degree I would like to continue studying for a higher degree at the same school, while working somewhere related to my studies.</P>
+                </header>
+                <div class="card_aboutme">
+                    <div class="aboutme_img">
+                        <img src="img/leia.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="#Projects">
+                <h3>Projects</h3>
+                <P>Here is a compilation of all the projects that have been done during this first quarter in the subject of representation systems.</P>
+                <h4>We have learned to make websites with images, audios, links, etc, with html and ccs. This will help us in the future, especially in our work as graphic designers and to handle this digital field.</h4>
+                <div class="container">
+                    <div class="card_projects">
+                        <div class="projects_img">
+                            <img src="img/1.png" alt="">
+                        </div>
+                        <nav>
+                                <a href="pages/1_LlocWeb/index.html">1</a>
+                        </nav>
+                        <header>
+                            <h5>WEBSITE</h5>
+                            <blockquote>
+                                © Leia Granero Roca
+                            </blockquote>
+                        </header>
+                    </div>
+                    <div class="card_projects">
+                        <div class="projects_img">
+                            <img src="img/2.png" alt="">
+                        </div>
+                        <nav>
+                                <a href="pages/2_LLocWb_img/index.html">2</a>
+                        </nav>
+                        <header>
+                            <h5>WEBSITE_LINK</h5>
+                            <blockquote>
+                                © Leia Granero Roca
+                            </blockquote>
+                        </header>
+                    </div>
+                    <div class="card_projects">
+                        <div class="projects_img">
+                            <img src="img/3.png" alt="">
+                        </div>
+                        <nav>
+                                <a href="pages/3_img_video_audio/index.html">3</a>
+                        </nav>
+                        <header>
+                            <h5>IMG_VIDEO_AUDIO</h5>
+                            <blockquote>
+                                © Leia Granero Roca
+                            </blockquote>
+                        </header>
+                    </div>
+                    <div class="card_projects">
+                        <div class="projects_img">
+                            <img src="img/4.png" alt="">
+                        </div>
+                        <nav>
+                                <a href="pages/4_gallery/sitioweb/index.html">4</a>
+                        </nav>
+                        <header>
+                            <h5>GALLERY</h5>
+                            <blockquote>
+                                © Leia Granero Roca
+                            </blockquote>
+                        </header>
+                    </div>
+                    <div class="card_projects">
+                        <div class="projects_img">
+                            <img src="img/5.png" alt="">
+                        </div>
+                        <nav>
+                                <a href="pages/5_grid/index.html">5</a>
+                        </nav>
+                        <header>
+                            <h5>GRID</h5>
+                            <blockquote>
+                                © Leia Granero Roca
+                            </blockquote>
+                        </header>
+                    </div>
+                    <div class="card_projects">
+                        <div class="projects_img">
+                            <img src="img/6.png" alt="">
+                        </div>
+                        <nav>
+                                <a href="pages/6_Neoplasticism/index.html">6</a>
+                        </nav>
+                        <header>
+                            <h5>NEOPLASTICISM</h5>
+                            <blockquote>
+                                © Leia Granero Roca
+                            </blockquote>
+                        </header>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer id="#ContactMe">
+            <h3>Contact me</h3>
+            <div class="container">
+                <ul>
+                    <li>granerorl@easdalcoy.es</li>
+                    <li>@graneroleia</li>
+                    <li>+36 665586321</li>
+                </ul>
+            </div>
+    </footer>
+</body>
+</html>

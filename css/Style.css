@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 32px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    font-family: var(--andanapro);
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+:root{
+    --negro: #000000;
+    --verde: #8aaa8f;
+    --grisclaro: #303030;
+    --blanco: #FFFFFF;
+    --gris: #e5e5e5;
+    --opensans: 'Open Sans', sans-serif;
+    --andanapro: 'Andada Pro', serif;
+    --negrita: 600;
+}
+.container{
+    padding: 0 2em;
+}
+body>header{
+    display: flex;
+    padding: 60px 0;
+    text-align: center;
+    height: 100vh;
+    background-color: var(--verde);
+}
+header .container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+hgroup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+h1{
+    font-size: 1.5em;
+    margin: 6em 0 1em 0;
+    font-family: var(--opensans);
+    font-weight: var(--negrita);
+    color: var(--blanco);
+}
+h2{
+    font-size: 1em;
+    font-family: var(--andanapro);
+    color: white;
+    width: 50%;
+}
+h3{
+    margin: 2em 0 1em 1.7em;
+    font-family: var(--opensans);
+}       
+h4{
+    margin: 0 15em 2em 2em;
+    font-weight: var(--negrita);
+
+}
+h5{
+    font-family: var(--opensans);
+}
+p{
+    margin: 0 15em 2em 2em;
+    color: var(--verde);
+}
+nav{
+    display: flex;
+    padding: 1em 3em;
+    width: 100%;
+    justify-content: space-between;
+}
+nav a{
+    font-size: 0.75em;
+}
+section:first-child .container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--negro);
+    color: white;
+}
+section:last-child .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*ABOUT ME*/
+.card_aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 1em;
+    padding: 0.75em;
+    width: 300px;
+}
+.aboutme_img{
+    width: 300px;
+    height: 300px;
+    margin: 0 -9em 2em 1em;
+}
+.aboutme_img img{
+    border-radius: 300px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+/*PROJECTS*/
+.card_projects{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 1em;
+    padding: 0.75em;
+    align-items: center;
+    width: 300px;
+    box-shadow: var(--negro) 0px 0px 15px;
+}
+.projects_img{
+    width: 250px;
+    height: 250px;
+}
+.card_projects header{
+    margin: 0.75em 0 0 0;
+    text-align: center;
+    font-size: 0.7em;
+}
+section:last-child{
+    display: flexbox;
+    padding: 6px 0;
+    height: 100%;
+    background-color: var(--gris);
+    color: var(--negro);
+}
+footer{
+    padding: 6px 0;
+    height: 50vh;
+    background-color: var(--verde);
+    color: white;
+}
+footer .container{
+    display: flex;
+}
+footer ul li{
+    font-family: var(--opensans);
+    font-size: 0.6em;
+    color: white;
+}
